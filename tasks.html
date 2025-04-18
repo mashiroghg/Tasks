@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - Apple Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <nav class="apple-navbar">
+        <div class="nav-content">
+            <h3 class="apple-logo">Tasks</h3>
+           
+           
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">Settings</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="dark-mode-item">
+                            <label>
+                                <input type="checkbox" id="dark-mode-toggle">
+                                Dark Mode
+                            </label>
+                        </a>
+                      
+                        <a href="#">Notifications</a>
+                        <a href="#">Help</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="auth-section">
+            <button id="login-btn" class="login-btn">
+               Sign In
+            </button>
+            <div id="user-profile" style="display:none">
+            
+              <span id="username"></span>
+              <button id="logout-btn" class="logout-btn">Sign Out</button>
+            </div>
+          </div>
+    </nav>
+
+    
+
+    
+    <div class="container">
+        <div class="hero">
+            <h1>Get Things Done.</h1>
+            <p>Organize your tasks with simplicity and elegance.</p>
+        </div>
+
+        
+        <div class="task-container" id="task-container">
+            <div class="task-header">
+                <h2>My Tasks</h2>
+            </div>
+            
+            <ul class="task-list" id="task-list">
+                <!-- Tasks will be added dynamically -->
+            </ul>
+            
+            <div class="task-input-container">
+                <input id="task-input" type="text" class="task-input" placeholder="Add a new task...">
+                <button id="addbutton" class="task-submit">Add</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="apple-footer">
+        <p>Copyright © 2025 timon.frenken@gmail.com. All rights reserved.</p>
+    </footer>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/auth.js"></script>
+</body>
+</html>
